@@ -104,3 +104,23 @@ print(f"\nProper evaluation (unseen data):")
 print(f"Test RMSE: {test_rmse:.2f}")
 print(f"Training data size: {len(X_train)}")
 print(f"Test data size: {len(X_test)}")
+
+
+# Linear Regression
+# What it is: A method that finds the best straight line (or plane) through your data points.
+# The goal: Find a mathematical formula that predicts one thing based on other things.
+# Our example:
+
+# We wanted to predict rating based on budget and year
+# The algorithm found: Rating = -63.89 + (-0.0063 × budget) + (0.0366 × year)
+# This is just a fancy equation for a line in 3D space
+
+# RMSE (Root Mean Squared Error)
+# What it measures: How far off your predictions are, on average.
+# The process:
+
+# Make predictions for all movies
+# Calculate each error (predicted - actual)
+# Square all errors (makes them positive, punishes big errors more)
+# Average the squared errors
+# Take square root (gets back to original units)
