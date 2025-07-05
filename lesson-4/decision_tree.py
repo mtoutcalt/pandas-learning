@@ -18,6 +18,7 @@ print("Our data with blockbuster labels:")
 print(movies[['title', 'budget_millions', 'year', 'rating', 'is_blockbuster']])
 
 # Train a decision tree
+# "Can we predict if a movie will be a blockbuster WITHOUT knowing its rating?"
 X = movies[['budget_millions', 'year']]
 y = movies['is_blockbuster']
 
